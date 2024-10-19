@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Word Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Next Word Prediction</h1>
+
+    <div class="container">
+        <input type="text" id="inputText" placeholder="Start typing..." autocomplete="off" />
+    </div>
+    <div class="suggestions">
+            <div id="suggestions">
+            <div class="wordSuggestions" id="wordSuggestions"></div>
+            <div id="sentenceSuggestions"></div>
+    </div>
+
+
+    </div>
+    <button id="displayButton">Display Sentence</button>
+    <div id="displayArea"></div>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
